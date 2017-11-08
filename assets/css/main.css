@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(76, 180, 240);
+    margin: 0;
+    padding:0;
+}
+header{
+    background-color: #fff;
+    margin-bottom: 3em;
+}
+section{
+    overflow: hidden;
+    padding-left: 10em;
+    position: relative;
+}
+#btn{
+    display: block;
+    margin-left: 65%;
+    color: #FFF;
+    border:none;
+    padding: 1em;
+    cursor: pointer;
+    
+}
+#cont{
+    color: white;
+    width: 80%;
+}
+#logo{
+    display: inline-block;
+    width: 20%;
+}
+.center{
+    text-align: center;
+}
+.chart{
+    font-size: .7em;
+    color: rgb(187, 183, 183);
+    margin-left: 60%;
+}
+.cont{
+    background-color: rgba(62, 84, 104, 0.178);
+    padding: 1em;
+}
+.conteiner{
+    background-color:#fff;
+    width: 30%;
+    display: inline-block;
+    padding: 1em 0em;  
+    overflow: hidden;
+    position: absolute;
+    top:2.5em;
+}
+.perfil{
+    width: 30%;
+    margin-right: 3em;
+    display: inline-block;
+}
+.perfil img{
+    border-radius: 100%;
+}
+textarea{  
+    overflow:hidden;
+    margin:50px auto;
+    display:block;
+    border: none;
+}
+textarea:focus{
+    outline: none;
+}
+.trash:hover{
+    color: rgb(5, 45, 68);
+    cursor: pointer;
+}
+.trash{
+    float: right;
+}
+.txt{  
+    overflow:hidden;
+    margin:5px auto;
+    display:block;
+}
+
