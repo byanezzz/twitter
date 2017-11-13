@@ -14,11 +14,13 @@ section{
 }
 #btn{
     display: block;
-    margin-left: 65%;
+    margin-left: 72%;
     color: #FFF;
     border:none;
     padding: 1em;
     cursor: pointer;
+    font-size: .7em;
+    background-color: grey;
     
 }
 #cont{
@@ -29,6 +31,29 @@ section{
     display: inline-block;
     width: 20%;
 }
+#nCaracteres{
+    font-size: .7em;
+}
+#newComment{
+    background-color: #fff;
+    padding-bottom: 1em;
+    width: 100%;
+    
+    margin-bottom: 1em;
+}
+#newComment p{
+    width: 80%;
+    margin: 0;
+    display: inline-block;
+    padding-top: 1em;
+    padding-left: 1em;
+    overflow-wrap: break-word;
+}
+#newComment i{
+    float: right;
+    padding-top: 1em;
+    padding-right: .5em;
+}
 .center{
     text-align: center;
 }
@@ -38,8 +63,11 @@ section{
     margin-left: 60%;
 }
 .cont{
-    background-color: rgba(62, 84, 104, 0.178);
     padding: 1em;
+    width: 32%;
+    margin-left: 24em;
+    border-radius: .5em;
+    margin-bottom: 1em;
 }
 .conteiner{
     background-color:#fff;
@@ -49,6 +77,7 @@ section{
     overflow: hidden;
     position: absolute;
     top:2.5em;
+    border-radius: .5em;
 }
 .perfil{
     width: 30%;

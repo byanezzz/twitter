@@ -15,6 +15,7 @@ window.onload=function(){
 
     spamChart2.appendChild(txtSpam2);
     spamChart2.style.fontSize="0.7em";
+    
 
     divChart.appendChild(spamChart1);
     divChart.appendChild(spamChart2);
@@ -43,30 +44,47 @@ window.onload=function(){
         counter();
     }
     button.onclick=function(){
+        spamChart2.style.color="black"
+        autosize(textarea);
         add();
     }
     function add(){   
-        counter();      
         var comments=document.getElementById("comment").value;
         document.getElementById("comment").value="";
         disabled();
 
         txtSpam2.textContent=140;
-       
-        var newComment=document.createElement("div");
                
-        var paragraph=document.createElement("p");
-        
-        var nodoText=document.createTextNode(comments);
-        paragraph.appendChild(nodoText);
-        
+        var newComment=document.createElement("div");
+        newComment.setAttribute("id","newComment")
+               
+        var paragraph=document.createElement("p");        
+        var nodeText=document.createTextNode(comments);
+        paragraph.appendChild(nodeText);
+        newComment.appendChild(paragraph);
+
         var trash=document.createElement("i");
         trash.classList.add("fa", "fa-trash", "trash");
-
         newComment.appendChild(trash);
-        newComment.appendChild(paragraph);
+        
         cont.appendChild(newComment);
         cont.classList.add("cont");
+       
+        var printHour=document.createElement("p");
+        printHour.style.fontSize=".7em";
+        newComment.appendChild(printHour);
+        var date=new Date();
+        var hour = date.getHours();
+        var minutes = date.getMinutes();
+        if(hour<10){
+            hour='0'+hour;
+        }
+        if(minutes<10){
+            minutes='0'+minutes;
+        }
+        formatHour=hour+':'+minutes;       
+        var nodeHour=document.createTextNode(formatHour);
+        printHour.appendChild(nodeHour);
 
         trash.addEventListener("click",function(){
             cont.removeChild(newComment);
@@ -96,7 +114,4 @@ window.onload=function(){
             spamChart2.style.color="black"
         }
     }
-    
-
 }
-
